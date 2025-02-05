@@ -4,64 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Resources</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
-        
-        .heading{
-            font-family: Inter , Montserrat;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
             text-align: center;
         }
-        .circulum{
-            height: 55px;
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #2a7de1;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .section {
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .section img {
+            width: 100px;
+            margin: 10px;
+        }
+        .img{
+            float: left;
         }
         
-        .writeup{
-            width: 450px;
-            
+        .text {
+            flex: 1;
+            text-align: left;
         }
-        
-
     </style>
 </head>
 <body>
-    <div>
-    <h1 class="heading">CV Resources</h1>
-    <hr width="5%"  color="66D3FA" size="5">
-
-    <div  class="circulum">
-        <div class="div1">
-        <h2 class="wcv">1. What is a CV (Curriculum Vitae)?</h2>
-        <p class="writeup">CV (short for Curriculum Vitae) is the Latin word for “course of life.”
-            In a nutshell, a CV is a summary of who you are as a professional, 
-            including your work history, education, and skills. Done right, a CV is 
-            supposed to “sell you” to potential employers and land you a job.</p>
-
-            <h2 class="wcv">2. What’s the Difference Between a 
-                CV and a Resume? </h2>
-            <p class="writeup"> Technically speaking, a CV and a resume are the same 
-                document. The only difference is that Americans call it 
-                a "resume," while Europeans and others refer to it as a 
-                CV.
-                A European CV can be between two and three pages 
-                long, depending on experience. A US resume is usually 
-                one or two pages max.
-                For more on the  
-                CV vs Resume
-                article.
-                topic, check out our article.</p>
+    <div class="container">
+        <h1>CV Resources</h1>
+        
+        <div class="section left">
+            <img src="cv.png" alt="CV Icon">
+            <div class="text">
+                <h2>What is a CV (Curriculum Vitae)?</h2>
+                <p>CV (short for Curriculum Vitae) is the Latin word for "course of life."</p>
+                <p>In a nutshell, a CV is a summary of who you are as a professional, including your work history, education, and skills. Done right, a CV is supposed to “sell you” to potential employers and land you a job.</p>
+            </div>
         </div>
         
-        <div class="div1">
-            
+        <div class="section right">
+            <div class="text">
+                <h2>#2. What’s the Difference Between a CV and a Resume?</h2>
+                <p>Technically speaking, a CV and a resume are the same document. The only difference is that Americans call it a "resume," while Europeans and others refer to it as a CV.</p>
+                <p>A European CV can be between two and three pages long, depending on experience. A US resume is usually one or two pages max.</p>
+                <p>For more on the <a href="#">CV vs Resume</a> topic, check out our article.</p>
             </div>
-
+            <img src="curriculum.png" alt="CV vs Resume">
+        </div>
     </div>
-    </div>
-
 </body>
+</html>
