@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Resources</title>
     <style>
+        .head {
+            align-content: center;
+            border-bottom: 3px solid #000;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -12,60 +17,102 @@
             background-color: #f4f4f4;
             text-align: center;
         }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+
         h1, h2 {
             color: #2a7de1;
         }
+
         p {
             line-height: 1.6;
         }
-        .section {
+
+        .container {
             display: flex;
-            align-items: center;
-            margin-bottom: 30px;
+            justify-content: space-between;
         }
-        .section img {
+
+        .left, .middle, .right {
+            flex: 1;
+            margin: 10px;
+        }
+
+        .left img, .right img {
             width: 100px;
             margin: 10px;
         }
-        .img{
-            float: left;
+
+        .middle {
+            text-align: left; /* Changed to left for better readability */
+            flex: 2; /* Increase the flex value to give it more space */
+            max-width: 600px; /* Optional: Set a max width */
+            
         }
-        
-        .text {
-            flex: 1;
-            text-align: left;
+
+        .right {
+            margin-top: 270px;
+            position: relative;
+        }
+
+        .x {
+            width: auto; /* Adjusted to auto for better text wrapping */
+        }
+        .y{
+            padding-top: 450px;
+            
         }
     </style>
 </head>
 <body>
+    <div class="head">
+        <h1>CV RESOURCES</h1>
+    </div>
     <div class="container">
-        <h1>CV Resources</h1>
-        
-        <div class="section left">
+        <div class="left">
             <img src="cv.png" alt="CV Icon">
-            <div class="text">
-                <h2>What is a CV (Curriculum Vitae)?</h2>
-                <p>CV (short for Curriculum Vitae) is the Latin word for "course of life."</p>
-                <p>In a nutshell, a CV is a summary of who you are as a professional, including your work history, education, and skills. Done right, a CV is supposed to “sell you” to potential employers and land you a job.</p>
-            </div>
+            <br>
+
+            <img class="y" src="xyz.png" alt="how to write cv">
         </div>
         
-        <div class="section right">
-            <div class="text">
-                <h2>#2. What’s the Difference Between a CV and a Resume?</h2>
-                <p>Technically speaking, a CV and a resume are the same document. The only difference is that Americans call it a "resume," while Europeans and others refer to it as a CV.</p>
-                <p>A European CV can be between two and three pages long, depending on experience. A US resume is usually one or two pages max.</p>
-                <p>For more on the <a href="#">CV vs Resume</a> topic, check out our article.</p>
-            </div>
+        <div class="middle">
+            <h2>What is a CV (Curriculum Vitae)?</h2>
+            <p>CV (short for Curriculum Vitae) is the Latin word for "course of life."</p>
+            <p>In a nutshell, a CV is a summary of who you are as a professional, including your work history, education, and skills. Done right, a CV is supposed to “sell you” to potential employers and land you a job.</p>
+
+            <h2>#2. What’s the Difference Between a CV and a Resume?</h2>
+            <p>Technically speaking, a CV and a resume are the same document. The only difference is that Americans call it a "resume," while Europeans and others refer to it as a CV.</p>
+            <p>A European CV can be between two and three pages long, depending on experience. A US resume is usually one or two pages max.</p>
+            <p>For more on the <a href="#">CV vs Resume</a> topic, check out our article.</p>
+
+            <h2>How to Write a CV?</h2>
+            <p class="x">There’s a lot that goes into writing an attention-grabbing CV, so you’re better off reading our comprehensive guide to improve your chances of getting hired.
+                <ol> That said, here are some effective tips to get you started:
+                    <li>Pick a CV template that works for you and suits your industry.</li>
+                    <li>Get the CV layout right by keeping your section headings consistent, leaving enough white space around the margins, and using a professional font.</li>
+                    <li>Add all the must-have contact details (e.g. name, job title, phone number, and email), as well as other relevant contact details, such as your LinkedIn profile.</li>
+                    <li>Include a concise CV summary that highlights your top achievements to grab the hiring manager’s attention from the get-go.</li>
+                    <li>Show off your work experience by including as many quantifiable achievements as possible.</li>
+                    <li>Keep your education section short and to the point by only mentioning your highest degree.</li>
+                    <li>List each and every soft and hard skill you have that is relevant to the job.</li>
+                    <li>Include optional CV sections, such as certificates and awards, languages, personal projects, or hobbies and interests.</li>
+                    <li>Follow the tips in our CV builder to help you polish your CV.</li>
+                </ol>
+            </p>
+
+            <h2>How Long Should a CV Be?</h2>
+            <p class="x">
+                For most jobs, a CV can be between one and three pages.
+
+That said, we always recommend keeping your CV short and to the point (i.e. one page long). The more concise you make your CV, the more likely it is for the hiring manager to read it from start to finish.
+
+If you’re based in the US, though, and you’re applying for a job or admission in academia, your CV can be as long as it needs to reflect your lengthy academic career (i.e. eight pages or more).
+            </p>
+
+        </div>
+        
+        <div class="right">
             <img src="curriculum.png" alt="CV vs Resume">
+            <!-- Add more images as needed -->
         </div>
     </div>
 </body>
