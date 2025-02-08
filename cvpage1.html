@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Resources</title>
     <style>
-
-
-
-
-header {
+        header {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -35,7 +32,7 @@ header {
             font-size: 40px;
             padding-left: 47px;
         }
-        
+
 
         nav ul {
             list-style: none;
@@ -54,12 +51,11 @@ header {
             font-family: inter, montserrat;
         }
 
-        /* NAV BAR CSS END */
 
 
         .head {
             align-content: center;
-            
+
         }
 
         body {
@@ -72,7 +68,8 @@ header {
             padding: 0px;
         }
 
-        h1, h2 {
+        h1,
+        h2 {
             color: #000000;
         }
 
@@ -85,12 +82,15 @@ header {
             justify-content: space-between;
         }
 
-        .left, .middle, .right {
+        .left,
+        .middle,
+        .right {
             flex: 1;
             margin: 10px;
         }
 
-        .left img, .right img {
+        .left img,
+        .right img {
             width: 142px;
             margin: 38px;
             margin-bottom: 71px;
@@ -98,9 +98,9 @@ header {
         }
 
         .middle {
-            text-align: left; 
-            flex: 2; 
-            max-width: 600px; 
+            text-align: left;
+            flex: 2;
+            max-width: 600px;
         }
 
         .right {
@@ -109,7 +109,7 @@ header {
         }
 
         .x {
-            width: auto; 
+            width: auto;
         }
 
         .y {
@@ -124,20 +124,54 @@ header {
             background-color: white;
             padding: 20px;
             box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-            margin-left: 400px;
-            margin-right: 400px;
+            margin: 20px auto;
             border-radius: 8px;
-            
+            display: flex;
+            align-items: left;
+            justify-content: space-between;
+            max-width: 900px;
         }
+        
+        .left-content {
+            flex: 1;
+            padding-right: 20px;
+        }
+        
+        .left-content h2 {
+            font-size: 22px;
+            font-weight: bold;
+            text-align: left;
+        }
+        
+        .left-content p {
+            font-size: 16px;
+            margin-bottom: 15px;
+            text-align: left;
+            align-items: left;
+        }
+        .left-content a .btn{
+            align-items: left;
+        }
+        
+        .right-content {
+            flex-shrink: 0;
+        }
+        
+        .right-content img {
+            width: 400px; 
+            height: 250px;
+            border-radius: 8px;
+        }
+        
 
         .templates {
-            padding-left: 215px;
+            padding-left: 100px;
             display: flex;
-            justify-content: center;
+            justify-content: left;
             gap: 20px;
             flex-wrap: wrap;
-            perspective: 1000px; /* Enables 3D effect */
+            perspective: 1000px;
+            /* Enables 3D effect */
         }
 
         .template {
@@ -145,7 +179,7 @@ header {
             background: white;
             padding: 15px;
             border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             text-align: left;
             transition: transform 0.4s ease, box-shadow 0.4s ease;
             transform-style: preserve-3d;
@@ -153,32 +187,37 @@ header {
 
         .template:hover {
             transform: rotateY(10deg) rotateX(10deg) scale(1.05);
-            box-shadow: 0px 15px 25px rgba(0,0,0,0.3);
+            box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
         }
 
         .template img {
             width: 100%;
             border-radius: 5px;
         }
+
         .btn {
             display: inline-block;
             margin-top: 15px;
             padding: 10px 15px;
-            background: #17c3b2;
+            background: #04b180;
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            align-items: flex-start;
+        }
+        .btn:hover{
+            background-color: #026448;
         }
 
-        
+
         .question-box {
             background-color: #ffffff;
             border: 2px solid #d8d6d6;
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 8px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
-            animation: fadeIn 1s ease-out; 
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-out;
             transition: all 0.3s ease;
         }
 
@@ -186,25 +225,27 @@ header {
             margin-top: 0;
         }
 
-        
+
         @keyframes fadeIn {
             0% {
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             100% {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
 
-        
+
         .question-box:hover {
             box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.797);
-            transform: translateY(-5px); 
+            transform: translateY(-5px);
         }
 
-        .left img, .right img {
+        .left img,
+        .right img {
             width: 142px;
             margin: 38px;
             margin-bottom: 71px;
@@ -212,32 +253,31 @@ header {
             transition: transform 0.5s ease, box-shadow 0.5s ease;
         }
 
-        .left img:hover, .right img:hover {
+        .left img:hover,
+        .right img:hover {
             transform: rotateY(15deg) rotateX(15deg) scale(1.1);
-            box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
         }
-
-
-
     </style>
 </head>
-<body>
-<header>
-    <div class="logo">
-        RESUME <span>X</span>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="#">RESUMES</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">CV</a></li>
-            <li><a href="#">COVER LETTERS</a></li>
-            <li><a href="#">CONTACT-US</a></li>
-        </ul>
-    </nav>
-</header>
 
-<!-- NAV BAR HTML END -->
+<body>
+    <header>
+        <div class="logo">
+            RESUME <span>X</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">RESUMES</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CV</a></li>
+                <li><a href="#">COVER LETTERS</a></li>
+                <li><a href="#">CONTACT-US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- NAV BAR HTML END -->
 
     <div class="head">
         <h1>CV RESOURCES</h1>
@@ -250,47 +290,59 @@ header {
         </div>
 
         <div class="middle">
-            
+
             <div class="question-box">
                 <h2>What is a CV (Curriculum Vitae)?</h2>
                 <p>CV (short for Curriculum Vitae) is the Latin word for "course of life."</p>
-                <p>In a nutshell, a CV is a summary of who you are as a professional, including your work history, education, and skills. Done right, a CV is supposed to “sell you” to potential employers and land you a job.</p>
+                <p>In a nutshell, a CV is a summary of who you are as a professional, including your work history,
+                    education, and skills. Done right, a CV is supposed to “sell you” to potential employers and land
+                    you a job.</p>
             </div>
 
-            
+
             <div class="question-box">
                 <h2>#2. What’s the Difference Between a CV and a Resume?</h2>
-                <p>Technically speaking, a CV and a resume are the same document. The only difference is that Americans call it a "resume," while Europeans and others refer to it as a CV.</p>
-                <p>A European CV can be between two and three pages long, depending on experience. A US resume is usually one or two pages max.</p>
+                <p>Technically speaking, a CV and a resume are the same document. The only difference is that Americans
+                    call it a "resume," while Europeans and others refer to it as a CV.</p>
+                <p>A European CV can be between two and three pages long, depending on experience. A US resume is
+                    usually one or two pages max.</p>
                 <p>For more on the <a href="#">CV vs Resume</a> topic, check out our article.</p>
             </div>
 
-            
+
             <div class="question-box">
                 <h2>How to Write a CV?</h2>
-                <p class="x">There’s a lot that goes into writing an attention-grabbing CV, so you’re better off reading our comprehensive guide to improve your chances of getting hired.
-                    <ol> 
-                        That said, here are some effective tips to get you started:
-                        <li>Pick a CV template that works for you and suits your industry.</li>
-                        <li>Get the CV layout right by keeping your section headings consistent, leaving enough white space around the margins, and using a professional font.</li>
-                        <li>Add all the must-have contact details (e.g. name, job title, phone number, and email), as well as other relevant contact details, such as your LinkedIn profile.</li>
-                        <li>Include a concise CV summary that highlights your top achievements to grab the hiring manager’s attention from the get-go.</li>
-                        <li>Show off your work experience by including as many quantifiable achievements as possible.</li>
-                        <li>Keep your education section short and to the point by only mentioning your highest degree.</li>
-                        <li>List each and every soft and hard skill you have that is relevant to the job.</li>
-                        <li>Include optional CV sections, such as certificates and awards, languages, personal projects, or hobbies and interests.</li>
-                        <li>Follow the tips in our CV builder to help you polish your CV.</li>
-                    </ol>
+                <p class="x">There’s a lot that goes into writing an attention-grabbing CV, so you’re better off reading
+                    our comprehensive guide to improve your chances of getting hired.
+                <ol>
+                    That said, here are some effective tips to get you started:
+                    <li>Pick a CV template that works for you and suits your industry.</li>
+                    <li>Get the CV layout right by keeping your section headings consistent, leaving enough white space
+                        around the margins, and using a professional font.</li>
+                    <li>Add all the must-have contact details (e.g. name, job title, phone number, and email), as well
+                        as other relevant contact details, such as your LinkedIn profile.</li>
+                    <li>Include a concise CV summary that highlights your top achievements to grab the hiring manager’s
+                        attention from the get-go.</li>
+                    <li>Show off your work experience by including as many quantifiable achievements as possible.</li>
+                    <li>Keep your education section short and to the point by only mentioning your highest degree.</li>
+                    <li>List each and every soft and hard skill you have that is relevant to the job.</li>
+                    <li>Include optional CV sections, such as certificates and awards, languages, personal projects, or
+                        hobbies and interests.</li>
+                    <li>Follow the tips in our CV builder to help you polish your CV.</li>
+                </ol>
                 </p>
             </div>
 
-        
+
             <div class="question-box">
                 <h2>How Long Should a CV Be?</h2>
                 <p class="x">
                     For most jobs, a CV can be between one and three pages.
-                    That said, we always recommend keeping your CV short and to the point (i.e. one page long). The more concise you make your CV, the more likely it is for the hiring manager to read it from start to finish.
-                    If you’re based in the US, though, and you’re applying for a job or admission in academia, your CV can be as long as it needs to reflect your lengthy academic career (i.e. eight pages or more).
+                    That said, we always recommend keeping your CV short and to the point (i.e. one page long). The more
+                    concise you make your CV, the more likely it is for the hiring manager to read it from start to
+                    finish.
+                    If you’re based in the US, though, and you’re applying for a job or admission in academia, your CV
+                    can be as long as it needs to reflect your lengthy academic career (i.e. eight pages or more).
                 </p>
             </div>
 
@@ -298,20 +350,28 @@ header {
 
         <div class="right">
             <img src="curriculum.png" alt="CV vs Resume">
-            
+
         </div>
     </div>
 
+
     <div class="header1">
-        <h2>Choose a Professional CV Template</h2>
-        <p>Pick one of our CV templates, each meticulously designed with leading HR firms from around the world.</p>
-        <a href="#" class="btn">Start with Random Template</a>
+        <div class="left-content">
+            <h2>Choose a Professional CV Template</h2>
+            <p>Pick one of our CV templates, each meticulously designed with leading HR firms from around the world.</p>
+            <a href="#" class="btn">Start with Random Template</a>
+        </div>
+        <div class="right-content">
+            <img src="https://files.oaiusercontent.com/file-7HFTvaSwQvGbKvY7x8U4zx?se=2025-02-08T12%3A12%3A31Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D6a91632b-ab55-44d5-a82e-40b283c2c072.webp&sig=17FvErTcRXu82Is2jyBvtm9uD6ot%2BHHuU3JVB1h4C6c%3D"
+                width="200px" height="200px"" alt="CV Template Illustration">
+        </div>
     </div>
+    
 
     <div class="container">
         <div class="templates">
             <div class="template">
-                <img  src="https://d.novoresume.com/images/doc/creative-cv-template.png" alt="Creative CV" >
+                <img src="https://d.novoresume.com/images/doc/creative-cv-template.png" alt="Creative CV">
                 <h4>Creative</h4>
                 <p>Perfect for startups and young companies.</p>
             </div>
@@ -333,4 +393,5 @@ header {
         </div>
     </div>
 </body>
+
 </html>
