@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Templates Carousel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c;
+            color: #fff;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            background-color: #333;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .hero {
+            padding: 50px 20px;
+        }
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .carousel-container {
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 19px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .card {
+          height: 453px;
+    width: 60px;
+          margin: 26px;
+    flex: 0 0 33.33%;
+    padding: 13px;
+    box-sizing: border-box;
+    transition: transform 0.5s, opacity 0.5s;
+    opacity: 0.5;
+    transform: scale(0.8);
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
+    border-radius: 20px; 
+    text-align: center; 
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card img {
+    width: 263px; 
+    height: 308px; 
+    border-radius: 30px; 
+    margin-bottom: 15px; 
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 5px; 
+    color: #fff; 
+}
+
+.card h3 {
+    font-size: 16px; 
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.card button {
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 14px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.card button:hover {
+    background-color: #0056b3; 
+}
+        .controls {
+            position: absolute;
+            top: 50%;
+            width: 97%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        .arrow {
+            background: rgba(255, 255, 255, 0.5);
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+            padding: 10px;
+            border-radius: 50%;
+            color: #333;
+        }
+        .arrow:hover {
+            background: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">LOGO</div>
+        <nav>
+            <a href="#">Platform</a>
+            <a href="#">Solutions</a>
+            <a href="#">Resources</a>
+            <a href="#">Enterprise</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Explore Premium Templates</h1>
+        <div class="carousel-container">
+            <div class="carousel">
+                <!-- Template 1 -->
+                <div class="card">
+                    <img src="https://cdn.prod.website-files.com/5dbfbe5b9bf13e1ebb54e91f/660ebdae3f89b76dc4919d9d_660dad997bc2e968c2f678e3_nero_thumbnail-p-500.png" alt="Template 1">
+                    <h3>FUSION CORE</h3>
+                    <p>A modern and sleek template designed for business websites.</p>
+                    <button>Get Link</button>
+                </div>
+                <!-- Template 2 -->
+                <div class="card">
+                    <img src="https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/67883d05174b5fd78661a1db_d20538c4-0200-4d82-aa33-982e5ba1de99.webp" alt="Template 2">
+                    <h3>AIMER-INVESTMENT</h3>
+                    <p>Perfect for financial and investment portfolios.</p>
+                    <button>Get Link</button>
+                </div>
+                <!-- Template 3 -->
+                <div class="card">
+                    <img src="https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/66f0f02a40c2b6dcb049905b_742e1ede-38b0-489f-be17-376709100394.webp" alt="Template 3">
+                    <h3>Template 3</h3>
+                    <p>An elegant template for creative portfolios.</p>
+                    <button>Get Link</button>
+                </div>
+                <!-- Template 4 -->
+                <div class="card">
+                    <img src="https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/670e6a870537670ec026df9a_1728997047724_691526202_emilruder-20webflow-20cover.webp" alt="Template 4">
+                    <h3>Template 4</h3>
+                    <p>A versatile template for e-commerce websites.</p>
+                    <button>Get Link</button>
+                </div>
+                <!-- Template 5 -->
+                <div class="card">
+                    <img src="https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/67883700ae6cfba59e9ff3bd_11da0d09-60d4-4021-ae68-10eb952d9784.webp" alt="Template 5">
+                    <h3>Template 5</h3>
+                    <p>A minimalistic template for blogs and personal websites.</p>
+                    <button>Get Link</button>
+                </div>
+                <!-- Template 6 -->
+                <div class="card">
+                    <img src="https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/679041f08b475b6f23b20a2c_1729661417995_22302200_Thumbnail.webp" alt="Template 6">
+                    <h3>Template 6</h3>
+                    <p>A bold template for startups and tech companies.</p>
+                    <button>Get Link</button>
+                </div>
+                <!-- Template 7 -->
+                <div class="card">
+                    <img src="https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/67883cc4174b5fd786614c09_dc5245cf-adea-460d-9afc-9d5fa1f97702.webp" alt="Template 7">
+                    <h3>Template 7</h3>
+                    <p>A clean and professional template for corporate websites.</p>
+                    <button>Get Link</button>
+                </div>
+                <!-- Template 8 -->
+                <div class="card">
+                    <img src="https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/67883ba13b9a4cd5a35317c8_ee248d58-502b-4f74-85a7-f2b4e549e19d.webp" alt="Template 8">
+                    <h3>Template 8</h3>
+                    <p>A vibrant template for creative agencies.</p>
+                    <button>Get Link</button>
+                </div>
+                <!-- Template 9 -->
+                <div class="card">
+                    <img src="https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/6788293192f337962c10c496_c9516290-c0d8-4674-ab65-0921080a21b6.webp" alt="Template 9">
+                    <h3>Template 9</h3>
+                    <p>A modern template for online portfolios.</p>
+                    <button>Get Link</button>
+                </div>
+                <!-- Template 10 -->
+                <div class="card">
+                    <img src="https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/66e0672d77d9573ae0418ed6_1231d873-c804-4f37-b949-ab1d2edabf53.webp" alt="Template 10">
+                    <h3>Template 10</h3>
+                    <p>A sleek template for tech startups.</p>
+                    <button>Get Link</button>
+                </div>
+                <!-- Template 11 -->
+                <div class="card">
+                    <img src="https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/67904d09c97b7247218ac64e_2cea208a-4198-4218-ab0d-b3a9f3682df1.webp" alt="Template 11">
+                    <h3>Template 11</h3>
+                    <p>A minimalist template for personal blogs.</p>
+                    <button>Get Link</button>
+                </div>
+                <!-- Template 12 -->
+                <div class="card">
+                    <img src="https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/67904cfd1e6b8361f59ea164_1e458879-3b51-4342-be3a-69bdc2ca3bf8.webp" alt="Template 12">
+                    <h3>Template 12</h3>
+                    <p>A bold and modern template for creative studios.</p>
+                    <button>Get Link</button>
+                </div>
+            </div>
+            <div class="controls">
+                <button class="arrow left">&#9665;</button>
+                <button class="arrow right">&#9655;</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentIndex = 1; // Start with the second card as the active one
+        const cards = document.querySelectorAll('.card');
+        const carousel = document.querySelector('.carousel');
+        const leftArrow = document.querySelector('.left');
+        const rightArrow = document.querySelector('.right');
+
+        function updateCarousel() {
+            // Reset styles for all cards
+            cards.forEach((card, index) => {
+                card.classList.remove('active');
+                card.style.opacity = "0.5";
+                card.style.transform = "scale(0.8)";
+            });
+
+            // Make the active card and its adjacent cards visible
+            for (let i = currentIndex - 1; i <= currentIndex + 1; i++) {
+                const cardIndex = (i + cards.length) % cards.length;
+                const card = cards[cardIndex];
+                if (i === currentIndex) {
+                    card.classList.add('active');
+                    card.style.opacity = "1";
+                    card.style.transform = "scale(1.1)";
+                } else {
+                    card.style.opacity = "0.7";
+                    card.style.transform = "scale(0.9)";
+                }
+            }
+
+            // Adjust the carousel's position to center the active card
+            const offset = -currentIndex * 33.33;
+            carousel.style.transform = `translateX(${offset}%)`;
+        }
+
+        leftArrow.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + cards.length) % cards.length; // Loop backward
+            updateCarousel();
+        });
+
+        rightArrow.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % cards.length; // Loop forward
+            updateCarousel();
+        });
+
+        updateCarousel(); // Initialize carousel on page load
+    </script>
+</body>
+</html>
